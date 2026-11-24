@@ -1,0 +1,9 @@
+{
+  "id": "better-calender",
+  "name": "better-calender",
+  "version": "0.2.0",
+  "minAppVersion": "1.7.2",
+  "description": "View, open, and create daily notes from a calendar in the right sidebar.",
+  "author": "newkingyeah",
+  "isDesktopOnly": false
+}

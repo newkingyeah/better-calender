@@ -1,0 +1,168 @@
+.workspace-leaf-content[data-type="better-calender-view"] > .view-header {
+  display: none;
+}
+
+.workspace-leaf-content[data-type="better-calender-view"] > .jc-content {
+  padding: 0;
+}
+
+.jc-calendar {
+  --jc-accent: var(--text-accent);
+  --jc-rule: var(--background-modifier-border);
+  --jc-height: 38px;
+  padding: 14px clamp(5px, 3%, 14px) 10px;
+  color: var(--text-normal);
+  font: 13px/1.25 var(--font-interface);
+  font-variant-numeric: tabular-nums;
+}
+
+.jc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 0 3px 11px;
+}
+
+.jc-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  line-height: 1.15;
+}
+
+.jc-month {
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: -0.055em;
+}
+
+.jc-year {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.jc-nav {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.jc-calendar button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.jc-nav button {
+  min-width: 26px;
+  height: 28px;
+  padding: 0 3px;
+  border-radius: 5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.jc-nav .jc-today {
+  font-size: 12px;
+}
+
+.jc-nav svg {
+  width: 15px;
+  height: 15px;
+}
+
+.jc-grid {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.jc-grid th, .jc-grid td {
+  border: 0;
+  padding: 0;
+}
+
+.jc-grid thead th {
+  height: 26px;
+  border-bottom: 1px solid var(--jc-rule);
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.jc-grid .jc-week {
+  width: 25px;
+}
+
+.jc-grid tbody .jc-week {
+  border-right: 1px solid var(--jc-rule);
+  color: var(--text-faint);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.jc-calendar .jc-date {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--jc-height);
+  min-width: 0;
+  padding: 0 0 5px;
+  border-radius: 5px;
+  color: var(--text-normal);
+  font: inherit;
+  font-size: 13px;
+}
+
+.jc-calendar .jc-date.is-adjacent {
+  color: var(--text-faint);
+}
+
+.jc-calendar .jc-date.is-today .jc-day-number {
+  color: var(--jc-accent);
+  font-weight: 700;
+}
+
+.jc-dot {
+  position: absolute;
+  bottom: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--text-muted);
+  pointer-events: none;
+}
+
+.jc-date.is-adjacent .jc-dot {
+  background-color: var(--text-faint);
+}
+
+.jc-calendar button:hover, .jc-calendar button:focus-visible {
+  background: var(--background-modifier-hover);
+}
+
+.jc-calendar button:focus-visible {
+  outline: 1px solid var(--jc-accent);
+  outline-offset: -1px;
+}
+
+.jc-setting-status {
+  min-height: 1.4em;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
